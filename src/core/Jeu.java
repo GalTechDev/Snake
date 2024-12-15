@@ -68,7 +68,7 @@ public class Jeu implements InterfaceDessin{
     public Case getRandomValideCase() {
         ArrayList<Case> valideCase = new ArrayList<Case>();
         for (int i=0; i<Grille.NBRE_DE_COLONNES; i++) {
-            for (int j=0; j<Grille.NBRE_DE_COLONNES; j++) {
+            for (int j=0; j<Grille.NBRE_DE_LIGNES; j++) {
                 if (!this.serpent.estDans(this.grille.getUneCase(i, j))) {
                     valideCase.add(this.grille.getUneCase(i, j));
                 }

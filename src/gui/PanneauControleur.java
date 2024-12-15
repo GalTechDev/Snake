@@ -6,6 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.lang.InterruptedException;
 
 import javax.swing.JButton;
 import javax.swing.JPanel;
@@ -32,6 +33,7 @@ public class PanneauControleur extends JPanel implements ActionListener, KeyList
 
 	private Timer timer;
 	private int delai=500;
+
 	/**
 	 * le "sequenceur" qui fait avancer le serpent et danser la grenouille
 	 */
@@ -107,8 +109,9 @@ public class PanneauControleur extends JPanel implements ActionListener, KeyList
 				this.jeu=new Jeu();
 				this.plateauJeu.setJeu(jeu);
 			}
-		}
 
+		}
+		
 		this.jeu.jouer();
 		this.plateauJeu.repaint();
 		this.timer.restart();
@@ -137,6 +140,8 @@ public class PanneauControleur extends JPanel implements ActionListener, KeyList
 		}
 
 		this.actionPerformed(null);
+	
+		
 	}
 
 	@Override

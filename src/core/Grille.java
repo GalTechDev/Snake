@@ -4,8 +4,8 @@ import java.awt.Graphics;
 import java.util.ArrayList;
 
 public class Grille implements InterfaceDessin{
-    public static final int NBRE_DE_COLONNES = 10;
-    public static final int NBRE_DE_LIGNES = 10;
+    public static final int NBRE_DE_COLONNES = 20;
+    public static final int NBRE_DE_LIGNES = 20;
 
     private ArrayList<ArrayList<Case>> lesCases = new ArrayList<ArrayList<Case>>();
 
